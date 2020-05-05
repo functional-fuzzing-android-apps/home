@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_000113-31",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": "Navigate up",
+      "focused": false,
+      "class": "android.widget.ImageButton",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          32
+        ],
+        [
+          86,
+          117
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "75*85",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,]",
+      "view_str": "4f6f705e6d3a6dfdf1f8613e026b6f64_0",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]None[content_desc]Navigate up"
+    }
+  },
+  "start_state": "94652ee3a4e8bf679a76909a88501869",
+  "stop_state": "b15375e271196e465a744f6943414437",
+  "event_str": "TouchEvent(state=94652ee3a4e8bf679a76909a88501869, view=4f6f705e6d3a6dfdf1f8613e026b6f64_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 14
+}

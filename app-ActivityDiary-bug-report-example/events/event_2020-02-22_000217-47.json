@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_000217-47",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "android:id/date_picker_header_date",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Sat, Feb 22",
+      "bounds": [
+        [
+          198,
+          341
+        ],
+        [
+          422,
+          402
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 8,
+      "temp_id": 10,
+      "size": "224*61",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]android:id/date_picker_header_date[text]Sat, Feb 22[enabled,,]",
+      "view_str": "80db4cda0a37b625da8821f9f90ba3aa_1",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]android:id/date_picker_header_date[content_desc]None"
+    }
+  },
+  "start_state": "40a3cfee4e5a4c548d5b2fdb60cdf2c7",
+  "stop_state": "b24c139c85bf397050d926b438ddc9de",
+  "event_str": "TouchEvent(state=40a3cfee4e5a4c548d5b2fdb60cdf2c7, view=80db4cda0a37b625da8821f9f90ba3aa_1)",
+  "is_inserted_event": false,
+  "utg_event_id": 14
+}

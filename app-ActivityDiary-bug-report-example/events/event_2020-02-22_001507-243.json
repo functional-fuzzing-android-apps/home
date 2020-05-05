@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_001507-243",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": true,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/design_menu_item_text",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.CheckedTextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Edit Activities",
+      "bounds": [
+        [
+          21,
+          634
+        ],
+        [
+          405,
+          698
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 70,
+      "temp_id": 71,
+      "size": "384*64",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.CheckedTextView[resource_id]de.rampro.activitydiary.debug:id/design_menu_item_text[text]Edit Activities[enabled,,]",
+      "view_str": "40939b454d596feb4c413decf1929a8c_0",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]de.rampro.activitydiary.debug:id/design_menu_item_text[content_desc]None"
+    }
+  },
+  "start_state": "0c8fbb485ebd220a8a7aa3de213c3916",
+  "stop_state": "41928833036d189673485778e6dbe657",
+  "event_str": "TouchEvent(state=0c8fbb485ebd220a8a7aa3de213c3916, view=40939b454d596feb4c413decf1929a8c_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 2
+}

@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_001624-264",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": true,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/switchWidget",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.Switch",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "OFF",
+      "bounds": [
+        [
+          704,
+          680
+        ],
+        [
+          768,
+          716
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 45,
+      "temp_id": 46,
+      "size": "64*36",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.Switch[resource_id]de.rampro.activitydiary.debug:id/switchWidget[text]OFF[enabled,,]",
+      "view_str": "b44737ca1c30098384d4588b6a822009_0",
+      "content_free_signature": "[class]android.widget.Switch[resource_id]de.rampro.activitydiary.debug:id/switchWidget[content_desc]None"
+    }
+  },
+  "start_state": "0c1372348f3123f6e6397cc867a4b5ee",
+  "stop_state": "d248dad7a0b247977ed570f0ec00a7fc",
+  "event_str": "TouchEvent(state=0c1372348f3123f6e6397cc867a4b5ee, view=b44737ca1c30098384d4588b6a822009_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 7
+}

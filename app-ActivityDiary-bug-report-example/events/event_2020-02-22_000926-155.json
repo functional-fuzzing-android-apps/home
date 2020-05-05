@@ -1,0 +1,61 @@
+{
+  "tag": "2020-02-22_000926-155",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.ScrollView",
+      "children": [
+        6
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "800*1184",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.ScrollView[resource_id]None[text]None[enabled,,]",
+      "view_str": "079c372ae8fc907a3b79df6ee42021cb_0",
+      "content_free_signature": "[class]android.widget.ScrollView[resource_id]None[content_desc]None"
+    },
+    "direction": "RIGHT"
+  },
+  "start_state": "192952f1c7a29ff91523e56e3258c8b5",
+  "stop_state": "192952f1c7a29ff91523e56e3258c8b5",
+  "event_str": "ScrollEvent(state=192952f1c7a29ff91523e56e3258c8b5, view=079c372ae8fc907a3b79df6ee42021cb_0, direction=RIGHT)",
+  "is_inserted_event": false,
+  "utg_event_id": 10
+}

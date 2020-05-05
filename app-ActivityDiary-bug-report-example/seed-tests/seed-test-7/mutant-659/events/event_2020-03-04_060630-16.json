@@ -1,0 +1,61 @@
+{
+  "tag": "2020-03-04_060630-16",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "set_text",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/hexCode",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": true,
+      "class": "android.widget.EditText",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "388E3C",
+      "bounds": [
+        [
+          69,
+          756
+        ],
+        [
+          161,
+          820
+        ]
+      ],
+      "editable": true,
+      "focusable": true,
+      "parent": 5,
+      "temp_id": 10,
+      "size": "92*64",
+      "sibling_id": 4,
+      "is_ignored": false,
+      "signature": "[class]android.widget.EditText[resource_id]de.rampro.activitydiary.debug:id/hexCode[content_desc]None[text]388E3C[enabled,,]",
+      "view_str": "efc96beccc41c434c57bd6cea96f300d_4",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]de.rampro.activitydiary.debug:id/hexCode[content_desc]None",
+      "text-sensitive-signature": "[class]android.widget.EditText[resource_id]de.rampro.activitydiary.debug:id/hexCode[content_desc]None[text]388E3C",
+      "postorder_view_id": 6
+    },
+    "text": "HelloWorld"
+  },
+  "start_state": "18f7a0987547d48dce03dcbf3921a940",
+  "stop_state": "2b994f11e4a9e6e9dbb160cbdf03db83",
+  "event_str": "SetTextEvent(state=18f7a0987547d48dce03dcbf3921a940, view=efc96beccc41c434c57bd6cea96f300d_4, text=HelloWorld)",
+  "is_inserted_event": false,
+  "utg_event_id": 17
+}

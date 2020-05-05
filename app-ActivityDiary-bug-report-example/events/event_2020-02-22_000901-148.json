@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_000901-148",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": true,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/design_menu_item_text",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.CheckedTextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Map",
+      "bounds": [
+        [
+          21,
+          506
+        ],
+        [
+          405,
+          570
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 66,
+      "temp_id": 67,
+      "size": "384*64",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.CheckedTextView[resource_id]de.rampro.activitydiary.debug:id/design_menu_item_text[text]Map[enabled,,]",
+      "view_str": "65cada512df7c84b7be5215310a9cdc1_0",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]de.rampro.activitydiary.debug:id/design_menu_item_text[content_desc]None"
+    }
+  },
+  "start_state": "644919012d6ce43f9f6a57e6d776c5e1",
+  "stop_state": "6389b1c3126450c341dd1c6953900ede",
+  "event_str": "TouchEvent(state=644919012d6ce43f9f6a57e6d776c5e1, view=65cada512df7c84b7be5215310a9cdc1_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 3
+}

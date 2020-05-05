@@ -1,0 +1,63 @@
+{
+  "tag": "2020-03-04_060553-3",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/select_card_view",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        45
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          383
+        ],
+        [
+          181,
+          487
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 43,
+      "temp_id": 44,
+      "size": "181*104",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/select_card_view[content_desc]None[text]None[enabled,,]",
+      "view_str": "56ff449a2f6ab8e6dea23ebceeab47cd_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/select_card_view[content_desc]None",
+      "text-sensitive-signature": "[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/select_card_view[content_desc]None[text]None",
+      "postorder_view_id": 36,
+      "brace_string": "{[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/select_card_view[content_desc]None[text]None{[class]android.widget.RelativeLayout[resource_id]de.rampro.activitydiary.debug:id/activity_background[content_desc]None[text]None{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/activity_name[content_desc]None[text]Gardening}}}"
+    }
+  },
+  "start_state": "4fdbde056421c19e1a4cc1865dc2e057",
+  "stop_state": "7ed3bfe91971410977b27b282020a0c1",
+  "event_str": "TouchEvent(state=4fdbde056421c19e1a4cc1865dc2e057, view=56ff449a2f6ab8e6dea23ebceeab47cd_0)",
+  "is_inserted_event": true,
+  "utg_event_id": 4
+}

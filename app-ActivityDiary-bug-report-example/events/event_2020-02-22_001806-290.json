@@ -1,0 +1,65 @@
+{
+  "tag": "2020-02-22_001806-290",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/detail_content",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "child_count": 6,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          226
+        ],
+        [
+          789,
+          383
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 35,
+      "temp_id": 36,
+      "size": "778*157",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/detail_content[text]None[enabled,,]",
+      "view_str": "581d2c063d280b2ae2ddd9ecd4b35384_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/detail_content[content_desc]None"
+    }
+  },
+  "start_state": "64b4417cb88e1cacf8c1360b927dfdea",
+  "stop_state": "64b4417cb88e1cacf8c1360b927dfdea",
+  "event_str": "TouchEvent(state=64b4417cb88e1cacf8c1360b927dfdea, view=581d2c063d280b2ae2ddd9ecd4b35384_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 1
+}

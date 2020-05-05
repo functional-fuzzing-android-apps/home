@@ -1,0 +1,60 @@
+{
+  "tag": "2020-02-22_001439-236",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [
+      "TouchEvent(view=4e723fb9221fe6b2964798ee7a722b0a_1)"
+    ],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "android:id/button1",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.Button",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "OK",
+      "bounds": [
+        [
+          597,
+          694
+        ],
+        [
+          682,
+          766
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 16,
+      "temp_id": 18,
+      "size": "85*72",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.Button[resource_id]android:id/button1[text]OK[enabled,,]",
+      "view_str": "fad4198ca460cae4269f39223ae7fe11_1",
+      "content_free_signature": "[class]android.widget.Button[resource_id]android:id/button1[content_desc]None"
+    }
+  },
+  "start_state": "130a552b2723c0cd0ad185e999458c3e",
+  "stop_state": "f2bd920659f4898273034a94928e9527",
+  "event_str": "TouchEvent(state=130a552b2723c0cd0ad185e999458c3e, view=fad4198ca460cae4269f39223ae7fe11_1)",
+  "is_inserted_event": false,
+  "utg_event_id": 11
+}

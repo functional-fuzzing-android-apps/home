@@ -1,0 +1,985 @@
+{
+  "tag": "2020-02-21_225459-1765",
+  "state_str": "58a30450070645f0cdd3e090afc3a73a",
+  "state_str_content_free": "350cfe197a40a0dbb4e6c13e617426fa",
+  "foreground_activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity",
+  "activity_stack": [
+    "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity",
+    "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity"
+  ],
+  "background_services": [
+    "com.google.android.gms/.deviceconnection.service.DeviceConnectionWatcherService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.android.systemui/.ImageWallpaper",
+    "com.google.android.gms/com.google.android.location.geocode.GeocodeService",
+    "com.google.android.gms/.auth.setup.devicesignals.LockScreenService",
+    "com.google.android.gms/.gcm.GcmService",
+    "com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.google.android.gms/.usagereporting.service.UsageReportingService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.gms/.gcm.nts.SchedulerService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.gms/com.google.android.location.geofencer.service.GeofenceProviderService",
+    "com.google.android.gms/.thunderbird.EmergencyPersistentService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "android/com.android.internal.backup.LocalTransportService",
+    "com.google.android.gms/.lockbox.service.LockboxBrokerService",
+    "com.google.android.gms/.common.stats.GmsCoreStatsService",
+    "com.android.inputmethod.latin/.spellcheck.AndroidSpellCheckerService",
+    "com.android.mms.service/.MmsService",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.gms/.backup.BackupTransportService"
+  ],
+  "window_stack": {
+    "#4 Window{72c68cf u0 de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity}:": "AppWindowToken{a41cb2a token=Token{b465c15 ActivityRecord{6ee41cc u0 de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity t8}}}",
+    "#3 Window{1a3aeb8 u0 de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity}:": "AppWindowToken{a41cb2a token=Token{b465c15 ActivityRecord{6ee41cc u0 de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.generic.EditActivity t8}}}"
+  },
+  "views": [
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        1
+      ],
+      "child_count": 3,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          800,
+          1280
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "800*1280",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "0cbc266421beb751cce729f58e8ce0a4_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        2
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "800*1216",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "307d53eefe42b4e8170cc17bcf2c383e_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        3
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "800*1184",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "f12af6dc8f094b6191070a540388ab1a_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/action_bar_root",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        4
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "800*1184",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/action_bar_root[text]None[enabled,,]",
+      "view_str": "f080ad502ddf12d0414db75404d0c8c0_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/action_bar_root[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "android:id/content",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        5
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "800*1184",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "fde8b088609e0c1d66c0bbd763a8a0bd_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/content_frame",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.RelativeLayout",
+      "children": [
+        6,
+        12
+      ],
+      "child_count": 2,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "800*1184",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.RelativeLayout[resource_id]de.rampro.activitydiary.debug:id/content_frame[text]None[enabled,,]",
+      "view_str": "0ff1cd1dc3e74501913336e46c52b4db_0",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]de.rampro.activitydiary.debug:id/content_frame[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/main_toolbar",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.view.ViewGroup",
+      "children": [
+        7,
+        8,
+        9
+      ],
+      "child_count": 3,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          32
+        ],
+        [
+          800,
+          117
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "800*85",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.view.ViewGroup[resource_id]de.rampro.activitydiary.debug:id/main_toolbar[text]None[enabled,,]",
+      "view_str": "915b22a5408f1756aaa3463a05b47d3a_0",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]de.rampro.activitydiary.debug:id/main_toolbar[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": "Navigate up",
+      "focused": false,
+      "class": "android.widget.ImageButton",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          32
+        ],
+        [
+          86,
+          117
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "75*85",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,]",
+      "view_str": "4f6f705e6d3a6dfdf1f8613e026b6f64_0",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]None[content_desc]Navigate up"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Officework",
+      "bounds": [
+        [
+          106,
+          56
+        ],
+        [
+          238,
+          93
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 6,
+      "temp_id": 8,
+      "size": "132*37",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Officework[enabled,,]",
+      "view_str": "2767045027345485fb73e62a893f0e45_1",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.support.v7.widget.LinearLayoutCompat",
+      "children": [
+        10,
+        11
+      ],
+      "child_count": 2,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          639,
+          32
+        ],
+        [
+          789,
+          117
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 6,
+      "temp_id": 9,
+      "size": "150*85",
+      "sibling_id": 2,
+      "is_ignored": false,
+      "signature": "[class]android.support.v7.widget.LinearLayoutCompat[resource_id]None[text]None[enabled,,]",
+      "view_str": "f1aabf0450385df346bda7fec40fcc2a_2",
+      "content_free_signature": "[class]android.support.v7.widget.LinearLayoutCompat[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/action_edit_delete",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": "Delete activity",
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          639,
+          42
+        ],
+        [
+          714,
+          106
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 9,
+      "temp_id": 10,
+      "size": "75*64",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/action_edit_delete[text]None[enabled,,]",
+      "view_str": "3ee624ae18d97388ace68b3365d99037_0",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/action_edit_delete[content_desc]Delete activity"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/action_edit_done",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": "Save",
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          714,
+          42
+        ],
+        [
+          789,
+          106
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 9,
+      "temp_id": 11,
+      "size": "75*64",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/action_edit_done[text]None[enabled,,]",
+      "view_str": "db260a5f0fa2d3dda5fb310e39bf0fa0_1",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/action_edit_done[content_desc]Save"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/drawer_layout",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.support.v4.widget.DrawerLayout",
+      "children": [
+        13
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          117
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 5,
+      "temp_id": 12,
+      "size": "800*1099",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.support.v4.widget.DrawerLayout[resource_id]de.rampro.activitydiary.debug:id/drawer_layout[text]None[enabled,,]",
+      "view_str": "740b5b2813712b57342980f35e0e1edb_1",
+      "content_free_signature": "[class]android.support.v4.widget.DrawerLayout[resource_id]de.rampro.activitydiary.debug:id/drawer_layout[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/content_fragment",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        14
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          117
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 12,
+      "temp_id": 13,
+      "size": "800*1099",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/content_fragment[text]None[enabled,,]",
+      "view_str": "a14b522c7a1f824df1d47240aa294523_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]de.rampro.activitydiary.debug:id/content_fragment[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        15,
+        21,
+        22
+      ],
+      "child_count": 3,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          117
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "800*1099",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "291b78e434f39a3cb847b8e69530d7a3_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        16
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          128
+        ],
+        [
+          789,
+          224
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 14,
+      "temp_id": 15,
+      "size": "778*96",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "596ee4a147cb1f33b45331d7f9eb822a_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/edit_activity_name_til",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        17,
+        19
+      ],
+      "child_count": 2,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          128
+        ],
+        [
+          789,
+          224
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 15,
+      "temp_id": 16,
+      "size": "778*96",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/edit_activity_name_til[text]None[enabled,,]",
+      "view_str": "ebff7d12b4c3f09bd54c9835e2575480_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/edit_activity_name_til[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [
+        18
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          142
+        ],
+        [
+          789,
+          202
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 16,
+      "temp_id": 17,
+      "size": "778*60",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "1560b022475345895c40cd4292780f8c_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/edit_activity_name",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": true,
+      "class": "android.widget.EditText",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "HelloWorld",
+      "bounds": [
+        [
+          11,
+          142
+        ],
+        [
+          789,
+          202
+        ]
+      ],
+      "editable": true,
+      "focusable": true,
+      "parent": 17,
+      "temp_id": 18,
+      "size": "778*60",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.EditText[resource_id]de.rampro.activitydiary.debug:id/edit_activity_name[text]HelloWorld[enabled,,]",
+      "view_str": "a5dc1619cd1d5a94061c4b5bcefb54a9_0",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]de.rampro.activitydiary.debug:id/edit_activity_name[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        20
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          11,
+          202
+        ],
+        [
+          789,
+          224
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 16,
+      "temp_id": 19,
+      "size": "778*22",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "fa400d9d2dae9a4150a704ec2849ac03_1",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.FrameLayout",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          16,
+          202
+        ],
+        [
+          28,
+          224
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 19,
+      "temp_id": 20,
+      "size": "12*22",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "e5b8da31dd46ab68e26511250997b8fa_0",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/edit_activity_color_label",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Activity color",
+      "bounds": [
+        [
+          11,
+          224
+        ],
+        [
+          789,
+          251
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 14,
+      "temp_id": 21,
+      "size": "778*27",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/edit_activity_color_label[text]Activity color[enabled,,]",
+      "view_str": "9e773e4f4f792cebe7ca7764fcc59601_1",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/edit_activity_color_label[content_desc]None"
+    },
+    {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/edit_activity_color",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.ImageView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          22,
+          262
+        ],
+        [
+          778,
+          329
+        ]
+      ],
+      "editable": false,
+      "focusable": false,
+      "parent": 14,
+      "temp_id": 22,
+      "size": "756*67",
+      "sibling_id": 2,
+      "is_ignored": false,
+      "signature": "[class]android.widget.ImageView[resource_id]de.rampro.activitydiary.debug:id/edit_activity_color[text]None[enabled,,]",
+      "view_str": "276a5e6621be4062864acae7988cbca7_2",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]de.rampro.activitydiary.debug:id/edit_activity_color[content_desc]None"
+    }
+  ]
+}

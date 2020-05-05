@@ -1,0 +1,64 @@
+{
+  "tag": "2020-02-23_133012-5",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/viewpager",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": "None",
+      "focused": false,
+      "class": "android.support.v4.view.ViewPager",
+      "children": [
+        34
+      ],
+      "child_count": 2,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          226
+        ],
+        [
+          800,
+          383
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 19,
+      "temp_id": 33,
+      "size": "800*157",
+      "sibling_id": 2,
+      "is_ignored": false,
+      "signature": "[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[content_desc]None[text]None[enabled,,]",
+      "view_str": "eb219139b0849298a47068306b37bcb6_2",
+      "content_free_signature": "[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[content_desc]None",
+      "text-sensitive-signature": "[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[content_desc]None[text]None",
+      "postorder_view_id": 32,
+      "brace_string": "{[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[content_desc]None[text]None{[class]android.widget.LinearLayout[resource_id]None[content_desc]None[text]None{[class]android.widget.ScrollView[resource_id]de.rampro.activitydiary.debug:id/nested_scrollview[content_desc]None[text]None{[class]android.widget.LinearLayout[resource_id]de.rampro.activitydiary.debug:id/detail_content[content_desc]None[text]None{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/duration_label[content_desc]None[text]Since a few seconds}{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/avg_duration_label[content_desc]None[text]-}{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/start_of_last_label[content_desc]None[text]-}{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/total_today_label[content_desc]None[text]Sun, 2.23.20: 0 sec}{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/total_week_label[content_desc]None[text]2020 Week 09: 0 sec}{[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/total_month_label[content_desc]None[text]February 2020: 0 sec}}}}}"
+    },
+    "direction": "LEFT"
+  },
+  "start_state": "bd87722743ba7b3ae435fe879ea7594c",
+  "stop_state": "bd87722743ba7b3ae435fe879ea7594c",
+  "event_str": "ScrollEvent(state=bd87722743ba7b3ae435fe879ea7594c, view=eb219139b0849298a47068306b37bcb6_2, direction=LEFT)",
+  "is_inserted_event": false,
+  "utg_event_id": 6
+}

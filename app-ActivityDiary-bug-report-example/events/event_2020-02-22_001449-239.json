@@ -1,0 +1,83 @@
+{
+  "tag": "2020-02-22_001449-239",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/recycler_view",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": true,
+      "class": "android.support.v7.widget.RecyclerView",
+      "children": [
+        15,
+        18,
+        22,
+        28,
+        31,
+        35,
+        39,
+        43,
+        47,
+        51,
+        54,
+        58
+      ],
+      "child_count": 12,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          117
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "800*1099",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.support.v7.widget.RecyclerView[resource_id]de.rampro.activitydiary.debug:id/recycler_view[text]None[enabled,,]",
+      "view_str": "0ec2e8984e5fb7a1005cf53e87fa5500_0",
+      "independent_child_region_ids": [
+        18,
+        22,
+        31,
+        35,
+        39,
+        43,
+        47,
+        54,
+        58
+      ],
+      "content_free_signature": "[class]android.support.v7.widget.RecyclerView[resource_id]de.rampro.activitydiary.debug:id/recycler_view[content_desc]None"
+    },
+    "direction": "DOWN"
+  },
+  "start_state": "f2bd920659f4898273034a94928e9527",
+  "stop_state": "f2bd920659f4898273034a94928e9527",
+  "event_str": "ScrollEvent(state=f2bd920659f4898273034a94928e9527, view=0ec2e8984e5fb7a1005cf53e87fa5500_0, direction=DOWN)",
+  "is_inserted_event": false,
+  "utg_event_id": 14
+}

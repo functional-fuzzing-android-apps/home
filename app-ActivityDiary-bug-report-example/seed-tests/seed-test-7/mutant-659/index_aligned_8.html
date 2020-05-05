@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DroidBot Simple Trace Comparision</title>
+
+    <script type="text/javascript" src="utg_8.js"></script>
+    <script type="text/javascript" src="checking_result.js"></script>
+    <script>
+        let utg_file_name = 'utg_8.json';
+    </script>
+    <script type="text/javascript"
+            src="stylesheets/vue.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <p>If result looks not right, please take a look at the console output.</p>
+    <table>
+        <tr>
+            <th>Seed Event</th>
+            <th>Seed State</th>
+            <th>Dynamic Event</th>
+            <th>Dynamic State</th>
+        </tr>
+        <tr v-for="line in event_edge_seed_dynamic_list" v-bind:class="line[4]">
+            <td class="event" v-html="line[0]"></td>
+            <td class="state" v-html="line[1]"></td>
+            <td class="event" v-html="line[2]"></td>
+            <td class="state" v-html="line[3]"></td>
+        </tr>
+    </table>
+</div>
+
+<script type="text/javascript"
+        src="stylesheets/aligned_view.js"></script>
+<style>
+    .event img {
+        max-width: 200px;
+    }
+
+    td.event {
+        max-width: 200px;
+        word-wrap: break-word;
+    }
+
+    .state img {
+        width: 400px;
+        height: 640px;
+    }
+
+    tr.seed-delta {
+        outline: red solid 10px;
+    }
+</style>
+
+</body>
+</html>

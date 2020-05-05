@@ -1,0 +1,60 @@
+{
+  "tag": "2020-02-22_000203-43",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [
+      "TouchEvent(view=69c46f34b100a1d617d2cecf7b4b93ca_0)"
+    ],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": true,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/adjust_adjacent",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": true,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.CheckBox",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Adjust adjacent diary entries",
+      "bounds": [
+        [
+          11,
+          411
+        ],
+        [
+          789,
+          453
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 13,
+      "temp_id": 25,
+      "size": "778*42",
+      "sibling_id": 5,
+      "is_ignored": false,
+      "signature": "[class]android.widget.CheckBox[resource_id]de.rampro.activitydiary.debug:id/adjust_adjacent[text]Adjust adjacent diary entries[enabled,checked,]",
+      "view_str": "04066f7d17ec4c51aed1ef2b830aa429_5",
+      "content_free_signature": "[class]android.widget.CheckBox[resource_id]de.rampro.activitydiary.debug:id/adjust_adjacent[content_desc]None"
+    }
+  },
+  "start_state": "403e16477956c4b83039fb1bcc0dff7a",
+  "stop_state": "009d6103805c3ef1ee674633e2b4b1a7",
+  "event_str": "TouchEvent(state=403e16477956c4b83039fb1bcc0dff7a, view=04066f7d17ec4c51aed1ef2b830aa429_5)",
+  "is_inserted_event": false,
+  "utg_event_id": 10
+}

@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-22_001235-203",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": true,
+      "resource_id": "de.rampro.activitydiary.debug:id/aboutTextView",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.TextView",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "Activity Diary Debug\n\nversion 1.4.0-debug\n\nLicense\n\nActivity Diary Debug is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nPrivacy Policy\n\nActivity Diary Debug and its authors have a deep interest to respect your privacy. The nature of this app is to track and store your activites and where and how you do them. Nevertheless it is your data in your hands and is not transmitted to any server or external party by the app without your explicit request. Read the full privacy policy.\n\nContact\n\nFor bugs and suggestions use the issue tacker, preferably in English language.\n\nSource code can be found on Github.\n\nSupport\n\nIn case you want to support the development of Activity Diary Debug consider discussing issues on github, translating on crowdin or donation on Liberapay.\n\nContributors\n\nRaphael Mack (developer)\n\nMurtala Umar (Indonesian translation)\n\nTommaso and Tiwi90 (Italian translation)\n\nJC Abuyot (Graphics)\n\nBc. Ondrej Janitor\n\nViktor Fedenyov (Russian translation)\n\nSam Partee\n\nWe are looking forward to mention your name in this list, too.\n\nLibraries\n\nThe following libraries are used by this application and licensed under the named licenses:\n\nMPAndroidChart by Philipp Jahoda, license APACHE-2.0\n\nosmdroid, license APACHE-2.0\n\nAndroid Material Color Picker Dialog by Simone Pessotto, license APACHE-2.0\n\nACRA - Application Crash Reports for Android, license APACHE-2.0\n\nPicasso, license APACHE-2.0\n\nappcompat, cardview, constraint-layout, recyclerview, design, preference, exifinterface, android.arch.lifecycle license APACHE-2.0\n\n",
+      "bounds": [
+        [
+          11,
+          366
+        ],
+        [
+          789,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 12,
+      "temp_id": 14,
+      "size": "778*850",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/aboutTextView[text]None[enabled,,]",
+      "view_str": "a6f19ba5e3b6e217f1280f39ac088e5e_1",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]de.rampro.activitydiary.debug:id/aboutTextView[content_desc]None"
+    }
+  },
+  "start_state": "82e31f6717a451c9b947e64a858bec04",
+  "stop_state": "82e31f6717a451c9b947e64a858bec04",
+  "event_str": "TouchEvent(state=82e31f6717a451c9b947e64a858bec04, view=a6f19ba5e3b6e217f1280f39ac088e5e_1)",
+  "is_inserted_event": false,
+  "utg_event_id": 10
+}

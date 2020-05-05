@@ -1,0 +1,62 @@
+{
+  "tag": "2020-02-22_000821-138",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.LinearLayout",
+      "children": [
+        23,
+        24
+      ],
+      "child_count": 2,
+      "package": "com.android.camera",
+      "text": null,
+      "bounds": [
+        [
+          1085,
+          569
+        ],
+        [
+          1128,
+          688
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 21,
+      "temp_id": 22,
+      "size": "43*119",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "cf10dc731ff08277139c596b447258df_0",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None",
+      "text-sensitive-signature": "[class]android.widget.LinearLayout[resource_id]None[content_desc]None[text]None"
+    }
+  },
+  "start_state": "a157b7adabec5547c5742b82f1ea1ff5",
+  "stop_state": "5eb9421c2c7507ccf93495d69425c73f",
+  "event_str": "TouchEvent(state=a157b7adabec5547c5742b82f1ea1ff5, view=cf10dc731ff08277139c596b447258df_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 9
+}

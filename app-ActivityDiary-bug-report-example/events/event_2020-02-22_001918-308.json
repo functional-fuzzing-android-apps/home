@@ -1,0 +1,61 @@
+{
+  "tag": "2020-02-22_001918-308",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/viewpager",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.support.v4.view.ViewPager",
+      "children": [
+        34
+      ],
+      "child_count": 2,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          226
+        ],
+        [
+          800,
+          383
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 19,
+      "temp_id": 33,
+      "size": "800*157",
+      "sibling_id": 2,
+      "is_ignored": false,
+      "signature": "[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[text]None[enabled,,]",
+      "view_str": "ff124eb6e3c90f2532c59f4a2cfe0ee2_2",
+      "content_free_signature": "[class]android.support.v4.view.ViewPager[resource_id]de.rampro.activitydiary.debug:id/viewpager[content_desc]None"
+    },
+    "direction": "UP"
+  },
+  "start_state": "ae5c48bc7e2740bb6fff3e594076ac7c",
+  "stop_state": "ae5c48bc7e2740bb6fff3e594076ac7c",
+  "event_str": "ScrollEvent(state=ae5c48bc7e2740bb6fff3e594076ac7c, view=ff124eb6e3c90f2532c59f4a2cfe0ee2_2, direction=UP)",
+  "is_inserted_event": false,
+  "utg_event_id": 3
+}

@@ -1,0 +1,87 @@
+{
+  "tag": "2020-02-22_001418-230",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [
+      "TouchEvent(view=e4efbce57a8bc6beb3cac08bae7f9a4c_8)"
+    ],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/recycler_view",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": true,
+      "class": "android.support.v7.widget.RecyclerView",
+      "children": [
+        15,
+        18,
+        22,
+        26,
+        29,
+        35,
+        41,
+        47,
+        53,
+        59,
+        62,
+        66,
+        70
+      ],
+      "child_count": 13,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          117
+        ],
+        [
+          800,
+          1216
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "800*1099",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.support.v7.widget.RecyclerView[resource_id]de.rampro.activitydiary.debug:id/recycler_view[text]None[enabled,,]",
+      "view_str": "704d36d20beaf796885094577fe393ec_0",
+      "independent_child_region_ids": [
+        18,
+        22,
+        29,
+        35,
+        41,
+        47,
+        53,
+        62,
+        66,
+        70
+      ],
+      "content_free_signature": "[class]android.support.v7.widget.RecyclerView[resource_id]de.rampro.activitydiary.debug:id/recycler_view[content_desc]None"
+    },
+    "direction": "DOWN"
+  },
+  "start_state": "800eb01bd2be9552f2f8310774f04cc8",
+  "stop_state": "f2bd920659f4898273034a94928e9527",
+  "event_str": "ScrollEvent(state=800eb01bd2be9552f2f8310774f04cc8, view=704d36d20beaf796885094577fe393ec_0, direction=DOWN)",
+  "is_inserted_event": false,
+  "utg_event_id": 5
+}

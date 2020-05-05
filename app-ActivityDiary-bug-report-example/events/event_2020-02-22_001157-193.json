@@ -1,0 +1,24 @@
+{
+  "tag": "2020-02-22_001157-193",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "fresh_restart",
+    "package": "de.rampro.activitydiary.debug",
+    "permissions": [
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ],
+    "intent": "am start de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity"
+  },
+  "start_state": "82e31f6717a451c9b947e64a858bec04",
+  "stop_state": "64b4417cb88e1cacf8c1360b927dfdea",
+  "event_str": "RestartEvent()",
+  "is_inserted_event": false,
+  "utg_event_id": 0
+}

@@ -1,0 +1,58 @@
+{
+  "tag": "2020-02-21_220732-13",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "de.rampro.activitydiary.debug:id/snackbar_action",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.Button",
+      "children": [],
+      "child_count": 0,
+      "package": "de.rampro.activitydiary.debug",
+      "text": "UNDO",
+      "bounds": [
+        [
+          517,
+          1146
+        ],
+        [
+          597,
+          1210
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 33,
+      "temp_id": 35,
+      "size": "80*64",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.Button[resource_id]de.rampro.activitydiary.debug:id/snackbar_action[text]UNDO[enabled,,]",
+      "view_str": "66a5b0fd97e089dba86f72ff275ed825_1",
+      "content_free_signature": "[class]android.widget.Button[resource_id]de.rampro.activitydiary.debug:id/snackbar_action[content_desc]None"
+    }
+  },
+  "start_state": "9891a52a5fb4bf6e3d64cf348baf7adc",
+  "stop_state": "efe911a428d4e17abb12d8a83e090f86",
+  "event_str": "TouchEvent(state=9891a52a5fb4bf6e3d64cf348baf7adc, view=66a5b0fd97e089dba86f72ff275ed825_1)",
+  "is_inserted_event": false,
+  "utg_event_id": 0
+}

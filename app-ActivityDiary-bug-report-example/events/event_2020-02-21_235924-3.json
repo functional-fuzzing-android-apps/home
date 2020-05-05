@@ -1,0 +1,60 @@
+{
+  "tag": "2020-02-21_235924-3",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": true,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": null,
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": "Statistics",
+      "focused": false,
+      "class": "android.support.v7.app.ActionBar$Tab",
+      "children": [
+        28
+      ],
+      "child_count": 1,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          0,
+          197
+        ],
+        [
+          266,
+          226
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 26,
+      "temp_id": 27,
+      "size": "266*29",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]android.support.v7.app.ActionBar$Tab[resource_id]None[text]None[enabled,,selected]",
+      "view_str": "951b9d97fb645bff7545228b61b17cf3_0",
+      "content_free_signature": "[class]android.support.v7.app.ActionBar$Tab[resource_id]None[content_desc]Statistics"
+    }
+  },
+  "start_state": "64b4417cb88e1cacf8c1360b927dfdea",
+  "stop_state": "64b4417cb88e1cacf8c1360b927dfdea",
+  "event_str": "TouchEvent(state=64b4417cb88e1cacf8c1360b927dfdea, view=951b9d97fb645bff7545228b61b17cf3_0)",
+  "is_inserted_event": false,
+  "utg_event_id": 2
+}

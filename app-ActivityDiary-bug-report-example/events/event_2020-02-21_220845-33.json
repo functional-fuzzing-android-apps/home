@@ -1,0 +1,61 @@
+{
+  "tag": "2020-02-21_220845-33",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [
+      "TouchEvent(view=db4b6f59dc3d27ad689c74f1835167b2_1)"
+    ],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "touch",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": false,
+      "long_clickable": false,
+      "resource_id": "com.android.camera:id/shutter_button",
+      "visible": true,
+      "enabled": true,
+      "clickable": true,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "android.widget.ImageView",
+      "children": [],
+      "child_count": 0,
+      "package": "com.android.camera",
+      "text": null,
+      "bounds": [
+        [
+          940,
+          151
+        ],
+        [
+          1280,
+          584
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 20,
+      "temp_id": 23,
+      "size": "340*433",
+      "sibling_id": 1,
+      "is_ignored": false,
+      "signature": "[class]android.widget.ImageView[resource_id]com.android.camera:id/shutter_button[text]None[enabled,,]",
+      "view_str": "6d5b79127286512548bcd65a703e586c_1",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.android.camera:id/shutter_button[content_desc]None",
+      "text-sensitive-signature": "[class]android.widget.ImageView[resource_id]com.android.camera:id/shutter_button[content_desc]None[text]None"
+    }
+  },
+  "start_state": "ab2fab8baebd78ac305b6acb53a8efcd",
+  "stop_state": "a157b7adabec5547c5742b82f1ea1ff5",
+  "event_str": "TouchEvent(state=ab2fab8baebd78ac305b6acb53a8efcd, view=6d5b79127286512548bcd65a703e586c_1)",
+  "is_inserted_event": false,
+  "utg_event_id": 0
+}

@@ -1,0 +1,61 @@
+{
+  "tag": "2020-02-22_000213-46",
+  "event": {
+    "executed_times": 0,
+    "children_event_ids": [],
+    "parent_event_ids": [],
+    "weight": 100,
+    "last_weight": 0,
+    "number_of_unexecuted_children_events": 0,
+    "event_type": "scroll",
+    "x": null,
+    "y": null,
+    "view": {
+      "checkable": false,
+      "selected": false,
+      "scrollable": true,
+      "long_clickable": false,
+      "resource_id": "android:id/day_picker_view_pager",
+      "visible": true,
+      "enabled": true,
+      "clickable": false,
+      "checked": false,
+      "is_password": false,
+      "content_description": null,
+      "focused": false,
+      "class": "com.android.internal.widget.ViewPager",
+      "children": [
+        14
+      ],
+      "child_count": 3,
+      "package": "de.rampro.activitydiary.debug",
+      "text": null,
+      "bounds": [
+        [
+          166,
+          426
+        ],
+        [
+          633,
+          875
+        ]
+      ],
+      "editable": false,
+      "focusable": true,
+      "parent": 12,
+      "temp_id": 13,
+      "size": "467*449",
+      "sibling_id": 0,
+      "is_ignored": false,
+      "signature": "[class]com.android.internal.widget.ViewPager[resource_id]android:id/day_picker_view_pager[text]None[enabled,,]",
+      "view_str": "1a52bd0405958e8db4deacef960189a6_0",
+      "content_free_signature": "[class]com.android.internal.widget.ViewPager[resource_id]android:id/day_picker_view_pager[content_desc]None"
+    },
+    "direction": "UP"
+  },
+  "start_state": "40a3cfee4e5a4c548d5b2fdb60cdf2c7",
+  "stop_state": "40a3cfee4e5a4c548d5b2fdb60cdf2c7",
+  "event_str": "ScrollEvent(state=40a3cfee4e5a4c548d5b2fdb60cdf2c7, view=1a52bd0405958e8db4deacef960189a6_0, direction=UP)",
+  "is_inserted_event": false,
+  "utg_event_id": 13
+}
