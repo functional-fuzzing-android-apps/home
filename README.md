@@ -1,4 +1,34 @@
-# Genie’s supplemental material (anonymized)
+# Genie
+
+We introduce *independent view fuzzing*, a novel, fully automated approach for
+detecting non-crashing functional bugs in Android apps. 
+We have realized this approach as an automated, end-to-end functional
+fuzzing tool, *Genie*. 
+
+Given an app, (1) Genie automatically detects non-crashing bugs without requiring
+human-provided tests and oracles (thus fully automated); and (2) the detected non-crashing bugs are diverse
+(thus general and not limited to specific functional properties), which set Genie apart from prior work.
+
+# Publication
+
+[1] ["Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs"](https://tingsu.github.io/files/oopsla21-Genie.pdf)
+Ting Su, Yichen Yan, Jue Wang, Jingling Sun, Yiheng Xiong, Geguang Pu, Ke Wang, Zhendong Su. In SPLASH/OOPSLA 2021. 
+
+```
+@article{10.1145/3485533,
+   author = {Su, Ting and Yan, Yichen and Wang, Jue and Sun, Jingling and Xiong, Yiheng and Pu, Geguang and Wang, Ke and Su, Zhendong},
+   title = {Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs},
+   year = {2021},
+   issue_date = {October 2021},
+   volume = {5},
+   number = {OOPSLA},
+   doi = {10.1145/3485533},
+   journal = {Proc. ACM Program. Lang.},
+   month = oct,
+   articleno = {156},
+   numpages = {31}
+}
+```
 
 ## 1. Video illustrations of functional bugs found by Genie 
 (corresponding to RQ4: Bug Types and Characteristics)
