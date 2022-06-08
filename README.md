@@ -475,7 +475,11 @@ python3 -m droidbot.debug --apk apps_for_test/instrumented_apps/org.tasks.debug-
 ```
 
 
-## Note
+## Contacts
 
-Genie is built upon Droidbot and Stoat.
+* [Ting Su](http://tingsu.github.io/) 
+* [Yichen Yan](https://scholar.google.com.sg/citations?user=MCOguzYAAAAJ) 
+* [Jue Wang](https://cv.juewang.info/)
+* [Zhendong Su](https://people.inf.ethz.ch/suz/)
 
+Note: Genie is built upon [Droidbot](https://github.com/honeynet/droidbot) and [Stoat](https://github.com/tingsu/Stoat).
