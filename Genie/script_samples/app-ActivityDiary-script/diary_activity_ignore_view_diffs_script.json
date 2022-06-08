@@ -1,0 +1,58 @@
+{
+	"de.rampro.activitydiary/.ui.main.MainActivity": {
+
+		"ignore_view_dict_1":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/duration_label",
+			"text_regex": null
+		},
+
+		"ignore_view_dict_2":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/note",
+			"text_regex": null
+		},
+
+		"ignore_view_diff_1":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/activity_name",
+			"from_text_regex": "<No Activity>",
+			"to_text_regex": ".*"
+		},
+
+		"ignore_view_order_1":{
+
+			"class": "android.support.v7.widget.RecyclerView",
+			"resource_id": "de.rampro.activitydiary:id/select_recycler",
+			"text_regex": null
+		}
+	},
+
+	"de.rampro.activitydiary/.ui.history.HistoryActivity": {
+
+		"ignore_view_dict_1":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/separator",
+			"text_regex": null
+		},
+
+		"ignore_view_dict_2":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/start_label",
+			"text_regex": null
+		},
+
+		"ignore_view_dict_3":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/duration_label",
+			"text_regex": null
+		},
+	
+		"ignore_view_dict_4":{
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary:id/note",
+			"text_regex": null
+		}
+	}
+}
+

@@ -1,0 +1,14 @@
+{
+
+   
+   "de.rampro.activitydiary/.ui.main.MainActivity":{
+	
+	"ignore_view_1": {
+
+	   "class": "android.widget.TextView",
+	   "resource_id": "de.rampro.activitydiary:id/activity_name",
+	   "text_regex": "Cooking|Gardening|Officework|Relaxing|Sleeping|Swimming"
+	}
+
+   }
+}

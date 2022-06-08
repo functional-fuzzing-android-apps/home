@@ -1,0 +1,53 @@
+{
+    "views": {
+        "create_activity_widget": {
+            "resource_id": "de.rampro.activitydiary:id/action_add_activity"
+        },
+		"activity_name_edittext": {
+            "resource_id": "de.rampro.activitydiary:id/edit_activity_name"
+        },
+		"activity_name_save":{
+			"resource_id": "de.rampro.activitydiary:id/action_edit_done"
+		}
+    },
+    "states": {
+        "diary_activity_state": {
+            "views": ["create_activity_widget"],
+			"seq_id": "1"
+        },
+		"edit_activity_state1":{
+			"views": ["activity_name_edittext"],
+			"seq_id": "2"
+		},
+		"edit_activity_state2":{
+			"views": ["activity_name_save"],
+			"seq_id": "3"
+		}
+    },
+    "operations": {
+        "create_activity_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "create_activity_widget"
+            }
+        ],
+		"input_activity_name_operation":[
+		    {
+				"event_type": "set_text",
+				"target_view": "activity_name_edittext",
+				"text": "Test"
+			}
+		],
+		"save_activity_name_operation":[
+		    {
+				"event_type": "touch",
+				"target_view": "activity_name_save"
+			}
+		]
+    },
+    "main": {
+        "diary_activity_state": ["create_activity_operation"],
+		"edit_activity_state1": ["input_activity_name_operation"],
+		"edit_activity_state2": ["save_activity_name_operation"]
+    }
+}

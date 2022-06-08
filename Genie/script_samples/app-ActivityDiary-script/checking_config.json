@@ -1,0 +1,53 @@
+{
+	"ignored_views": {
+
+		"view_1":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/duration_label"
+		},
+
+		"view_2":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/avg_duration_label"
+		},
+
+		"view_3":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/start_of_last_label"
+		},
+
+
+		"view_4":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/total_today_label"
+		},
+
+
+		"view_5":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/total_week_label"
+		},
+
+		"view_6":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "de.rampro.activitydiary.debug:id/total_month_label"
+		}
+	},
+
+	"ignored_view_children_order": {
+
+		"view_1":{
+			"activity": "de.rampro.activitydiary.debug/de.rampro.activitydiary.ui.main.MainActivity",
+			"class": "android.support.v7.widget.RecyclerView",
+			"resource_id": "de.rampro.activitydiary.debug:id/select_recycler"
+		}
+
+	}
+}
+
