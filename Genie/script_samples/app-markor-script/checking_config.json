@@ -1,0 +1,68 @@
+{
+	"ignored_views": {
+		"view_1": {
+			"activity": "net.gsantner.markor/.activity.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "net.gsantner.markor:id/ui__filesystem_item__description"
+		},
+
+		"view_2": {
+			"activity": "net.gsantner.markor/.activity.MainActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "net.gsantner.markor:id/empty_hint"
+		}
+	},
+
+	"gui_pages": {
+
+		"page_type_markor": [
+
+			{
+				"activity": "net.gsantner.markor/.activity.MainActivity",
+				"class": "android.widget.FrameLayout",
+				"resource_id": "net.gsantner.markor:id/nav_notebook",
+				"selected": true
+			}
+		],
+
+		"page_type_todo": [
+
+			{
+				"activity": "net.gsantner.markor/.activity.MainActivity",
+				"class": "android.widget.FrameLayout",
+				"resource_id": "net.gsantner.markor:id/nav_todo",
+				"selected": true
+			}
+		],
+
+		"page_type_quicknote": [
+
+			{
+				"activity": "net.gsantner.markor/.activity.MainActivity",
+				"class": "android.widget.FrameLayout",
+				"resource_id": "net.gsantner.markor:id/nav_quicknote",
+				"selected": true
+			}
+		],
+
+		"page_type_linkbox": [
+
+			{
+				"activity": "net.gsantner.markor/.activity.MainActivity",
+				"class": "android.widget.FrameLayout",
+				"resource_id": "net.gsantner.markor:id/nav_linkbox",
+				"selected": true
+			}
+		],
+
+		"page_type_more": [
+
+			{
+				"activity": "net.gsantner.markor/.activity.MainActivity",
+				"class": "android.widget.FrameLayout",
+				"resource_id": "net.gsantner.markor:id/nav_more",
+				"selected": true
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"ignored_views": {
+		"view_1": {
+			"activity": "free.rm.skytube.extra/free.rm.skytube.gui.activities.YouTubePlayerActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "free.rm.skytube.extra:id/playbackSpeed"
+		},
+
+		"view_2": {
+			"activity": "free.rm.skytube.extra/free.rm.skytube.gui.activities.YouTubePlayerActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "free.rm.skytube.extra:id/exo_position"
+		},
+
+		"view_3": {
+			"activity": "free.rm.skytube.extra/free.rm.skytube.gui.activities.YouTubePlayerActivity",
+			"class": "android.widget.TextView",
+			"resource_id": "free.rm.skytube.extra:id/exo_duration"
+		},
+
+		"view_4": {
+			"activity": "free.rm.skytube.extra/free.rm.skytube.gui.activities.YouTubePlayerActivity",
+			"class": "android.widget.SeekBar",
+			"resource_id": "free.rm.skytube.extra:id/exo_progress"
+		}
+	}
+}

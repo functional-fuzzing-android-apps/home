@@ -1,0 +1,29 @@
+{
+
+    "ignored_views": {
+      "view_1": {
+        "activity": "org.tasks.debug/com.todoroo.astrid.activity.TaskListActivity",
+        "class": "android.widget.Chronometer",
+        "resource_id": "org.tasks.debug:id/timer"
+      },
+
+       "view_2": {
+        "activity": "org.tasks.debug/com.todoroo.astrid.activity.TaskListActivity",
+        "class": "android.widget.TextView",
+        "resource_id": "org.tasks.debug:id/display_row_edit",
+        "text": "Elapsed*"
+      },
+
+      "view_3": {
+        "activity": "org.tasks.debug/com.todoroo.astrid.activity.TaskListActivity",
+        "class": "android.widget.TextView",
+        "resource_id": "android:id/text1"
+      },
+
+      "view_4": {
+        "activity": "org.tasks.debug/com.todoroo.astrid.activity.TaskListActivity",
+        "class": "android.widget.ImageView",
+        "resource_id": "org.tasks.debug:id/clear"
+      }
+    }
+}

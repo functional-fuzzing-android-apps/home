@@ -1,0 +1,9 @@
+{
+	"ignored_views": {
+		"view_1": {
+			"activity": "net.gsantner.markor/.activity.MainActivity",
+			"class": "android.support.v7.widget.RecyclerView",
+			"resource_id": "net.gsantner.markor:id/ui__filesystem_dialog__list"
+		}
+	}
+}

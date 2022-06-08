@@ -1,0 +1,132 @@
+{
+
+	"org.tasks/com.todoroo.astrid.core.CustomFilterActivity": {},
+
+	"org.tasks/.preferences.BasicPreferences": {},
+
+        "org.tasks/.activities.TagSettingsActivity": {},
+
+	"org.tasks/com.todoroo.astrid.activity.TaskListActivity": {
+
+
+		"ignore_view_1": {
+
+	   		"class": "android.widget.CheckedTextView",
+	   		"resource_id": "android:id/text1",
+	   		"text_regex": "Custom*"
+		},
+
+		"ignore_view_2": {
+
+	   		"class": "android.widget.CheckedTextView",
+	   		"resource_id": "org.tasks:id/text1",
+	   		"text_regex": "Pick a date"
+		},
+
+		"ignore_view_3": {
+
+	   		"class": "android.widget.CheckedTextView",
+	   		"resource_id": "org.tasks:id/text1",
+	   		"text_regex": "Pick a time"
+		},
+
+		"ignore_view_4": {
+
+	   		"class": "android.widget.TextView",
+	   		"resource_id": "org.tasks:id/alarms_add",
+	   		"text_regex": "Add reminder"
+		},
+
+		"ignore_view_5": {
+
+	   		"class": "android.widget.CheckedTextView",
+	   		"resource_id": "org.tasks:id/text1",
+	   		"text_regex": "Pick a date and time"
+		},
+
+                "ignore_view_6": {
+
+	   		"class": "android.widget.ImageView",
+	   		"resource_id": "org.tasks:id/timer_button",
+	   		"text_regex": null
+		},
+
+		 "ignore_view_7": {
+
+	   		"class": "android.widget.TextView",
+	   		"resource_id": "org.tasks:id/display_row_edit",
+	   		"text_regex": "Timer"
+		},
+
+		 "ignore_view_8": {
+
+	   		"class": "android.widget.TextView",
+	   		"resource_id": "android:id/text1",
+	   		"text_regex": "‎Record a note|‎Pick from gallery|‎Pick from storage"
+		},
+
+		"ignore_view_9": {
+
+	   		"class": "android.widget.TextView",
+	   		"resource_id": "org.tasks:id/menu_voice_add",
+	   		"text_regex": null
+		},
+
+
+		"ignore_view_12": {
+
+	   		"class": "android.widget.Spinner",
+	   		"resource_id": "org.tasks:id/due_date",
+	   		"text_regex": null
+		},
+
+		"ignore_view_13": {
+
+	   		"class": "android.widget.Spinner",
+	   		"resource_id": "org.tasks:id/due_time",
+	   		"text_regex": null
+		},
+
+		"ignore_view_13": {
+
+	   		"class": "android.widget.Spinner",
+	   		"resource_id": "org.tasks:id/display_row_edit",
+	   		"text_regex": "Does not repeat"
+		},
+
+		"ignore_view_15": {
+
+	   		"class": "android.widget.EditText",
+	   		"resource_id": "org.tasks:id/notes",
+	   		"text_regex": "Description"
+		},
+
+		"ignore_view_16": {
+
+	   		"class": "android.widget.Spinner",
+	   		"resource_id": "org.tasks:id/hideUntil",
+	   		"text_regex": null
+		},
+
+		"ignore_view_17": {
+
+	   		"class": "android.widget.TextView",
+	   		"resource_id": "org.tasks:id/calendar_display_which",
+	   		"text_regex": "Don't add to calendar"
+		},
+
+		"ignore_view_18": {
+
+	   		"class":  "android.widget.Spinner",
+	   		"resource_id": "org.tasks:id/reminder_alarm",
+	   		"text_regex": null
+		},
+
+		"ignore_view_19": {
+
+	   		"class":  "android.widget.ImageView",
+	   		"resource_id": "org.tasks:id/clear",
+	   		"text_regex": null
+		}
+	}
+}
