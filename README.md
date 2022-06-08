@@ -1,9 +1,6 @@
 # Genie
 
-We introduce *independent view fuzzing*, a novel, fully automated approach for
-detecting non-crashing functional bugs in Android apps. 
-We have realized this approach as an automated, end-to-end functional
-fuzzing tool, *Genie*. 
+We introduce *independent view fuzzing*, a novel, fully automated approach for detecting non-crashing functional bugs in Android apps. We have realized this approach as an automated, end-to-end functional fuzzing tool, *Genie*. 
 
 Given an app, (1) Genie automatically detects non-crashing bugs without requiring
 human-provided tests and oracles (thus fully automated); and (2) the detected non-crashing bugs are diverse
@@ -482,4 +479,4 @@ python3 -m droidbot.debug --apk apps_for_test/instrumented_apps/org.tasks.debug-
 * [Jue Wang](https://cv.juewang.info/)
 * [Zhendong Su](https://people.inf.ethz.ch/suz/)
 
-Note: Genie is built upon [Droidbot](https://github.com/honeynet/droidbot) and [Stoat](https://github.com/tingsu/Stoat).
+Note: Genie is built upon [Droidbot](https://github.com/honeynet/droidbot) and [Stoat](https://github.com/tingsu/Stoat). 
