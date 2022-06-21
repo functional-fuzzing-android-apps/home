@@ -41,7 +41,6 @@ We summarize the major setup instructions as follows:
 2. `Java`
 3. `Android SDK`
 4. Add `platform_tools` directory in Android SDK to `PATH`
-5. (Optional) `OpenCV-Python` if you want to run DroidBot in cv mode.
 
 ## How to install
 
@@ -193,7 +192,7 @@ Here,
 4. In this mode, we do not need to specify ``-config-script``, which is used for oracle checking and relocate views during actual execution of mutant tests.
 
 
-## Step 3.2: execute mutant tests in parallel 
+### Step 3.2: execute mutant tests in parallel 
 
 We currently support running mutant tests on a number of Android emulators in parallel
 
@@ -238,9 +237,9 @@ delete the corresponding log files and rerun.
 
 Please see ``script_samples/run_genie.sh`` for reference.
 
-## Some useful quick tests for Step 3
+### Some useful quick tests for Step 3
 
-### (1) run one specific mutant and do oracle checking (internally called by multiple-threads fuzzing)
+####(1) run one specific mutant and do oracle checking (internally called by multiple-threads fuzzing)
 
 ```
 python3 -m droidbot.start -d emulator-5554 -a apps_for_test/de.rampro.activitydiary_118.apk -policy fuzzing_run -grant_perm -is_emulator -keep_app -o ./tmp-diary/ -mutant ./tmp-diary/seed-tests/seed-test-1/mutant-1 -coverage [-config-script script_samples/diary_activity_ignore_view_diffs_script.json]
@@ -264,7 +263,7 @@ Here,
 
 3. We may not need to specify ``-interval``.
 
-### (2) run mutant generation and execution together in a single-thread
+####(2) run mutant generation and execution together in a single-thread
 
 ```
 python3 -m droidbot.start -d emulator-5554 -a apps_for_test/de.rampro.activitydiary_118.apk -policy fuzzing -count 10000 -max_seed_test_suite_size 20 -max_random_seed_test_length 15 -max_independent_trace_length 8 -max_mutants_per_insertion_position 300 -grant_perm -is_emulator -interval 1 -o ./tmp-diary [-script user_script.json] [-config-script script_samples/diary_activity_ignore_view_diffs_script.json]
@@ -433,11 +432,13 @@ python3 -m droidbot.debug --apk apps_for_test/instrumented_apps/org.tasks.debug-
 python3 -m droidbot.debug --apk apps_for_test/instrumented_apps/org.tasks.debug-gplay-6.6.5.apk --output test-tasks-model-1/ test-tasks-model-1/seed-tests/seed-test-17 --views script_samples/app-tasks-script/critical_views.json
 ```
 
-# Video illustrations of functional bugs found by Genie 
+## More information
+
+### 1. Video illustrations of functional bugs found by Genie 
 (corresponding to RQ4: Bug Types and Characteristics)
 
 
-### Bug type 1 (User data/setting lost)
+#### Bug type 1 (User data/setting lost)
 
 This bug type leads to user data/setting lost. Sometimes, this bug type can bring severe consequences and critical user complaints.
 
@@ -446,7 +447,7 @@ Example Issue from [Markor](https://play.google.com/store/apps/details?id=net.gs
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/5))
 
 
-### Bug type 2 (Function cannot proceed)
+#### Bug type 2 (Function cannot proceed)
 
 This bug type means one specific app functionality that works well before suddenly cannot proceed anymore and loses effect.
 
@@ -455,7 +456,7 @@ Example Issue from [SkyTube](https://skytube-app.com/)
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/6))
 
 
-### Bug type 3 (Unexpected wrong behavior)
+#### Bug type 3 (Unexpected wrong behavior)
 
 This bug type means the specific functionality shows wrong behavior w.r.t. its previous correct behavior.
 
@@ -464,7 +465,7 @@ Example Issue from [ActivityDiary](https://play.google.com/store/apps/details?id
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/1))
 
 
-### Bug type 4 (Inconsistent GUI states)
+#### Bug type 4 (Inconsistent GUI states)
 
 This bug type means the GUI states are inconsistent for specific functionality, which counters users’ intuition on app function.
 
@@ -473,7 +474,7 @@ Example Issue from [Transistor](https://play.google.com/store/apps/details?id=or
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/4))
 
 
-### Bug type 5-1 (Duplicated GUI views)
+#### Bug type 5-1 (Duplicated GUI views)
 
 This bug type means some GUI views are erroneously duplicated.
 
@@ -482,7 +483,7 @@ Example Issue from [Tasks](https://play.google.com/store/apps/details?id=org.tas
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/3))
 
 
-### Bug type 5-2 (Disappeared GUI views)
+#### Bug type 5-2 (Disappeared GUI views)
 
 This bug type means some GUI views inadvertently disappear.
 
@@ -491,7 +492,7 @@ Example Issue from [Fosdem](https://play.google.com/store/apps/details?id=be.dig
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/2))
 
 
-### Bug type 5-3 (Incorrect GUI display information)
+#### Bug type 5-3 (Incorrect GUI display information)
 
 This bug type means some views are incorrectly displayed.
 
@@ -500,7 +501,7 @@ Example Issue from [RadioDroid](https://play.google.com/store/apps/details?id=ne
 Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issues/9))
 
 
-### Other bug samples (much more complicated)
+#### Other bug samples (much more complicated)
 
 [UnitConverter](https://play.google.com/store/apps/details?id=com.physphil.android.unitconverterultimate) (1,000,000~50,000,000 installations on Google Play, 144 Github stars)
 
@@ -516,7 +517,7 @@ Bug report ([link](https://github.com/functional-fuzzing-android-apps/home/issue
 - This issue escaped from developer/user testing for more than 2.5 years and affected 74 releases.
 
 
-## 2. Bug report visualization by Genie (a bug report sample)
+### 2. Bug report visualization by Genie (a bug report sample)
 
 Bug summary ([link](https://github.com/functional-fuzzing-android-apps/home/issues/10))
 
