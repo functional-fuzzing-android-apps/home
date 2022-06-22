@@ -83,7 +83,7 @@ emulator -port 5554 -avd base &
 python3 -m deploy.emulator init -s emulator-5554  # if you are not under "Genie", you should execute "cd Genie/"
 ```
 
-## Step 2: Mine GUI transitional model, generate seed tests and corresponding mutant tests 
+## Step 2: Mine GUI transitional model, generate seed and mutant tests 
 
 We provide a script to automatically start an Android emulator, mine GUI transitional model, generate 
 seed tests and the corresponding mutants.
