@@ -174,7 +174,7 @@ class ResultAnalyzer(object):
                                     (mutant_test_dir, checking_result_dict['insert_position']))
 
                         if checking_result_dict['semantic_error']:
-                            # collect the mutant if it has crash errors
+                            # collect the mutant if it has semantic errors
                             if seed_test_dir not in self.all_mutants_with_semantic_error:
                                 self.all_mutants_with_semantic_error[seed_test_dir] = [mutant_test_dir]
                             else:
@@ -188,10 +188,20 @@ class ResultAnalyzer(object):
         """
         do oracle checking on single mutant
         :param mutant_test_dir:
-        :return:
+        :return: None if the mutant test was not executed (thus we cannot do oracle checking now)
+                or some exception happens.
         """
 
-        seed_test_dir = os.path.dirname(os.path.abspath(mutant_test_dir))
+        # get the absolute path of the mutant test
+        absolute_path_of_mutant_test = os.path.abspath(mutant_test_dir)
+        if not os.path.exists(os.path.join(absolute_path_of_mutant_test, "events")):
+            current_datetime = datetime.datetime.now()
+            test_execution_result = "[" + str(current_datetime) + "]" \
+                                    + "[this mutant was not executed, skip it]" "\n"
+            print("\n\n" + test_execution_result + "\n\n")
+            return None
+
+        seed_test_dir = os.path.dirname(absolute_path_of_mutant_test)
 
         try:
             seed_test = GUITestCase(self.device, self.app, self.random_input,
@@ -356,6 +366,7 @@ class ResultAnalyzer(object):
 
         is_faithfully_replayed = checking_result_obj.is_faithfully_replayed
 
+        print("\n=== Result ===")
         print("unique error instances: %d" % len(unique_error_instances))
         print("pruned error instances: %d" % len(pruned_error_instances))
 
@@ -640,22 +651,23 @@ if __name__ == '__main__':
     ap.add_argument("--check-and-merge", action="store_true", dest="check_and_merge", default=False,
                     help="do oracle checking and merge checking results iteratively for each seed test")
     ap.add_argument("--mutant", action="store", dest="mutant_test_dir",
-                    help="the mutant to check")
+                    help="the specific mutant to do oracle checking")
     ap.add_argument("--seeds", action="store", dest="seed_test_ids",
-                    help="the specific seed test id, e.g., \"1;2;3\"")
+                    help="the specific seed test id, e.g., \"1;2;3\" to do oracle checking and merging checking results")
     ap.add_argument('--no-view-text', dest='include_view_text', default=True,
                     action='store_false',
                     help='Do *NOT* include view text when merging error reports')
     ap.add_argument("--cores", action="store", dest="num_of_cores",
                     help="specify the number of cores to use, please mind average load")
-    ap.add_argument('--no-skip', dest='do_skip', default=True,
+    ap.add_argument('--skip', dest='do_skip', default=False,
                     action='store_false',
-                    help='Do *NOT* skip mutants have been done oracle checking based on all `<-o>/oracle-checking-<time>.log` or `<-o>/merge-checking-<time>.log`')
+                    help='Do skip mutants or seeds which have finished oracle checking or merging checking results '
+                         'based on all `<-o>/oracle-checking-<time>.log`or `<-o>/merge-checking-<time>.log`')
 
     opts = ap.parse_args()
 
     if opts.config_file is not None and not os.path.exists(opts.config_file):
-        print("config file does not exists!")
+        print("cannot find the config file")
         sys.exit(0)
 
     ids = set()

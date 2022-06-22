@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     ap.add_argument('--seeds-to-mutate', '-s', dest='seeds_to_mutate', type=str, default='all',
                     help='\'all\', or ids of seed tests to run, like \'1;2;3\'')
-    
+
     ap.add_argument('--offset', default=0, type=int)
     ap.add_argument('--script', default=[], nargs='*')
     ap.add_argument('--config-script', dest='config_script', default=[], nargs='*')

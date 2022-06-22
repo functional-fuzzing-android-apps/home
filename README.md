@@ -124,7 +124,7 @@ Other configurations ready for use include ``--small``: ``(100, 2, 15)`` and ``-
 We currently support running mutant tests on a number of Android emulators in parallel
 
 ```
-python3 -m deploy.start --avd base -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --timeout 900 [--no-headless] [--offset 2] [--script script_samples/diary_activity_ignore_view_diffs_script.json]
+python3 -m deploy.start --avd base -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --no-coverage --timeout 900 [--no-headless] [--offset 2] [--script script_samples/diary_activity_ignore_view_diffs_script.json]
 ```
 
 Here,
@@ -152,7 +152,7 @@ Other options:
 ``--seeds-to-run``: the default value is ``all`` (run all mutant tests from all the seed tests), 
 or specify the ids of the seed tests to run, like ``'1;2;3'`` (run all the mutant tests of the seed tests with ids 1, 2, 3, **remember to add quotes**)
 
-``--debug`` or ``--test-single-mutant``: the file path of a mutant (run a single mutant), this implies `--no-skip`
+``--test-single-mutant`` or ``--debug``: specify the directory (relative or abosolute directory path) of one single mutant to run, this implies `--no-skip`
 
 ``--interval``: interval in seconds between each two events (Default: 0)
 
@@ -187,8 +187,27 @@ delete the corresponding log files and rerun.
 
 
 ```
-python3 -m droidbot.postprocess -o ./tmp-diary/ --apk apps_for_test/de.rampro.activitydiary_118.apk --check-and-merge [-f script_samples/app-ActivityDiary-script/checking_config.json] 
+python3 -m droidbot.postprocess -o ./tmp-diary/ --apk apps_for_test/de.rampro.activitydiary_118.apk --do-oracle-checking --merge-checking-results [-f script_samples/app-ActivityDiary-script/checking_config.json] 
 ```
+
+Here,
+
+``--do-oracle-checking``: do the oracle checking on all executed mutant test
+
+``--merge-checking-results``: merge the oracle checking results for all mutants which have finished oracle checking to
+reduce duplicated reported errors
+
+``-f CONFIG_FILE``: the oracle checking configuration file
+
+``--skip``: Do skip mutants or seeds which have finished oracle checking or merging checking results based on 
+all `<-o>/oracle-checking-<time>.log`or `<-o>/merge-checking-<time>.log`. By default, we will redo the oracle checking
+and merging checking results.
+
+``--cores NUM_OF_CORES``: specify the number of cores which can be used for oracle checking and merging results in parallel
+
+``--mutant``: the specific mutant to do oracle checking
+
+``--seeds``: the specific seed test id, e.g., "1;2;3" to do oracle checking and merging checking results
 
 Output Report, e.g.,
 

@@ -440,8 +440,12 @@ if __name__ == '__main__':
     ap.add_argument('--view_str_backtrack_tree_level', type=int, default=1)
     ap.add_argument('--no-coverage', dest='coverage', action='store_false', default=True,
                     help='Do *NOT* collect coverage data')
+
     ap.add_argument('--seeds-to-run', '-s', dest='seeds', type=str, default='all',
                     help='\'all\', or ids of seed tests to run, like \'1;2;3\'')
+    ap.add_argument('--test-single-mutant', '--debug', dest='test', default=None,
+                    help='Specify the directory (relative or abosolute directory path) of one single mutant to run, '
+                         'only for debugging, implies --no-skip.')
 
     ap.add_argument('--log', default=None, help='default is <-o>/droidbot-<time>.log')
 
@@ -450,9 +454,6 @@ if __name__ == '__main__':
                     help='droidbot memory limit in MB')
     ap.add_argument('--no-skip', dest='skip', default=True, action='store_false',
                     help='Do *NOT* skip tests have been run based on all `<-o>/droidbot-<time>.log`')
-
-    ap.add_argument('--test-single-mutant', '--debug', dest='test', default=None,
-                    help='Specific one single mutant to run, only for debugging, implies --no-skip.')
     ap.add_argument('--async-start', dest='async_start', action='store_true', default=False)
 
     ap.add_argument('--no-permission', dest='grant_permission', default=True, action='store_false')
