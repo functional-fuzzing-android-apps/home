@@ -119,7 +119,7 @@ Other options:
 
 Other configurations ready for use include ``--small``: ``(100, 2, 15)`` and ``--big``: ``(3200, 100, 300)``
 
-### Step 3: execute mutant tests in parallel 
+## Step 3: Execute mutant tests in parallel 
 
 We currently support running mutant tests on a number of Android emulators in parallel. Note that this step does
 not do oracle checking.
@@ -178,7 +178,7 @@ delete the corresponding log files and rerun.
 
 
 ```
-python3 -m droidbot.postprocess -o ./tmp-diary/ --apk apps_for_test/de.rampro.activitydiary_118.apk --do-oracle-checking --merge-checking-results [-f script_samples/app-ActivityDiary-script/checking_config.json] 
+python3 -m droidbot.postprocess -o ./tmp-diary/ --apk apps_for_test/de.rampro.activitydiary_118.apk --do-oracle-checking --merge-checking-results --cores 10 [-f script_samples/app-ActivityDiary-script/checking_config.json] 
 ```
 
 Here,
