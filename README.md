@@ -109,12 +109,16 @@ Here,
 ``--script``: the optional file path of user-defined script used for helping mining the GUI transitional model, which contains a sequence of input events 
 (e.g., bypass welcome page, login user account). You can find some samples under ``script_samples`` (e.g., ``pass_login_script.json``, ``pass_welcome_script.json``).
 
+Note that the default configuration is ``model_size, seed_count, mutant_per_pos = (2000, 20, 200)``;
+other configurations include ``--small``: ``model_size, seed_count, mutant_per_pos = (100, 2, 15)`` and 
+``--big``: ``model_size, seed_count, mutant_per_pos = (3200, 100, 300)``
+
 ### Step 3: execute mutant tests in parallel 
 
 We currently support running mutant tests on a number of Android emulators in parallel
 
 ```
-python3 -m deploy.start --no-headless -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --timeout 900 --offset 2 [--script script_samples/diary_activity_ignore_view_diffs_script.json]
+python3 -m deploy.start --avd base -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --timeout 900 [--no-headless] [--offset 2] [--script script_samples/diary_activity_ignore_view_diffs_script.json]
 ```
 
 Here,
@@ -125,12 +129,11 @@ Here,
 
 ``--timeout``: the maximum allowed testing time allocated for each mutant test. If timeouts, we will run the mutant one more time and give up if it timeouts again.
 
-``--script``: the optional script that specifies which views or the order of children views can be ignored when do oracle checking (this file is very important to reduce false positives). 
-
-
-Other options:
+``--script``: the optional script that specifies which views or the order of children views can be ignored when do oracle checking (this file is very important to reduce false positives).
 
 ``--no-headless``: do not hide the emulators 
+
+Other options:
 
 ``--no-trie-reduce``: do not use trie to prune infeasible mutant tests (By default, we do not add this option. We use trie to prune infeasible mutant tests.)
 
@@ -151,9 +154,27 @@ or specify the ids of the seed tests to run, like ``'1;2;3'`` (run all the mutan
 
 Note: In some cases, we may hope to rerun the mutants of some specific seeds, we can simply append ``--no-skip`` to the original command line.  But if we also add
 ``--no-trie-reduce``, then all the mutants will be executed again but will not use the previous trie to prune unreplayable mutants. Another way is to manually
-delete the corresponding log files and rerun. 
+delete the corresponding log files and rerun.
 
-Please see ``script_samples/run_genie.sh`` for reference.
+
+### Outputs of mutant execution (after finishing oracle checking)
+
+``tmp-diary/`` -- data of the original utg model
+
+``tmp-diary/{app_package_name}_testing_result.txt`` -- the final testing results 
+
+``tmp-diary/seed-tests/``  -- data of all randomly generated seed tests
+
+``tmp-diary/seed-tests/seed-test-1/`` -- data of the seed test and all mutants
+
+``tmp-diary/seed-tests/seed-test-1/mutant-1`` -- data of the mutant test
+
+``tmp-diary/seed-tests/seed-test-1/mutant-1/index_x.html`` -- the execution results with annotation info to highlight the semantic errors
+
+``tmp-diary/seed-tests/seed-test-1/mutant-1/checking_result.json`` -- the detailed results of oracle checking
+
+``tmp-diary/seed-tests/seed-test-1/mutant-1/gui_diff_analysis.txt`` -- the summary results of oracle checking
+
 
 
 ## Step 4. Postprocess the results (reduce false positives and merge similar reported errors)
@@ -179,7 +200,7 @@ We can focus on ``Crash Errors`` and ``Semantic Errors``.
 
 # Detailed Usage of Genie
 
-If you want to know more how to use and develop Genie, you can find the detailed instructions [here](https://github.com/functional-fuzzing-android-apps/home/tree/master/Genie/DEVELOPER.md).
+If you want to know more how to use and debug Genie, you can find the detailed instructions [here](https://github.com/functional-fuzzing-android-apps/home/tree/master/Genie/DEVELOPER.md).
 
 
 # How to inspect Genie-generated bug report?
