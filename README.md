@@ -89,7 +89,7 @@ We provide a script to automatically start an Android emulator, mine GUI transit
 seed tests and the corresponding mutants.
 
 ```
-python3 -m deploy.prerun --avd base --apk apps_for_test/de.rampro.activitydiary_118.apk ./tmp-diary --model-construction --seed-generation --mutant-generation [--no-headless] [--script script_samples/user_script.json] [--offset 1]
+python3 -m deploy.prerun --avd base --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary --model-construction --seed-generation --mutant-generation [--no-headless] [--script script_samples/user_script.json] [--offset 1]
 ```
 
 Here,
@@ -109,9 +109,15 @@ Here,
 ``--script``: the optional file path of user-defined script used for helping mining the GUI transitional model, which contains a sequence of input events 
 (e.g., bypass welcome page, login user account). You can find some samples under ``script_samples`` (e.g., ``pass_login_script.json``, ``pass_welcome_script.json``).
 
-Note that the default configuration is ``model_size, seed_count, mutant_per_pos = (2000, 20, 200)``;
-other configurations include ``--small``: ``model_size, seed_count, mutant_per_pos = (100, 2, 15)`` and 
-``--big``: ``model_size, seed_count, mutant_per_pos = (3200, 100, 300)``
+Other options:
+
+``--model-events-count``: the number of events allocated for mining the GUI transitional model, default value: `2000`
+
+``--seeds-count``: the number of random seed tests to be generated, default value: `20`
+
+``--mutants-per-pos``: the number of mutants to be generated at each insertion position of seed tests, default value: `200`
+
+Other configurations ready for use include ``--small``: ``(100, 2, 15)`` and ``--big``: ``(3200, 100, 300)``
 
 ### Step 3: execute mutant tests in parallel 
 

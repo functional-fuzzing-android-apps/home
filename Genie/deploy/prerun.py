@@ -9,13 +9,24 @@ if __name__ == '__main__':
     ap.add_argument('--avd', dest='avd', required=True)
     ap.add_argument('-o', dest='out', required=True)
     ap.add_argument('--apk', dest='apk', required=True)
+
     ap.add_argument('--model-construction', '--model', dest='model_construction',
                     default=False, action='store_true')
+    ap.add_argument('--model-events-count', dest='model_events_count', type=int, default=2000,
+                    help='the number of events allocated for mining the GUI transitional model')
+
     ap.add_argument('--seed-generation', '--seeds', dest='seed_generation',
                     default=False, action='store_true')
+    ap.add_argument('--seeds-count', dest='seeds_count', type=int, default=20,
+                    help='the number of random seed tests to be generated')
+
     ap.add_argument('--mutant-generation', '--mutants', dest='mutant_generation', action='store_true', default=False)
+    ap.add_argument('--mutants-per-pos', dest='mutants_per_pos', type=int, default=200,
+                    help='the number of mutants to be generated at each insertion position of seed tests')
+
     ap.add_argument('--seeds-to-mutate', '-s', dest='seeds_to_mutate', type=str, default='all',
                     help='\'all\', or ids of seed tests to run, like \'1;2;3\'')
+    
     ap.add_argument('--offset', default=0, type=int)
     ap.add_argument('--script', default=[], nargs='*')
     ap.add_argument('--config-script', dest='config_script', default=[], nargs='*')
@@ -42,7 +53,8 @@ if __name__ == '__main__':
         emulator = None
 
     # the default configuration for model construction and seed/mutant generation
-    model_size, seed_count, mutant_per_pos = (2000, 20, 200)
+    # model_size, seed_count, mutant_per_pos = (2000, 20, 200)
+    model_size, seed_count, mutant_per_pos = (args.model_events_count, args.seeds_count, args.mutants_per_pos)
     if args.small:
         model_size, seed_count, mutant_per_pos = (100, 2, 15)  # (100, 2, 15)
     elif args.big:
