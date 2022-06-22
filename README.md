@@ -121,7 +121,8 @@ Other configurations ready for use include ``--small``: ``(100, 2, 15)`` and ``-
 
 ### Step 3: execute mutant tests in parallel 
 
-We currently support running mutant tests on a number of Android emulators in parallel
+We currently support running mutant tests on a number of Android emulators in parallel. Note that this step does
+not do oracle checking.
 
 ```
 python3 -m deploy.start --avd base -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --no-coverage --timeout 900 [--no-headless] [--offset 2] [--script script_samples/diary_activity_ignore_view_diffs_script.json]
@@ -162,25 +163,15 @@ Note: In some cases, we may hope to rerun the mutants of some specific seeds, we
 ``--no-trie-reduce``, then all the mutants will be executed again but will not use the previous trie to prune unreplayable mutants. Another way is to manually
 delete the corresponding log files and rerun.
 
+### Outputs of mutant execution 
 
-### Outputs of mutant execution (after finishing oracle checking)
-
-``tmp-diary/`` -- data of the original utg model
-
-``tmp-diary/{app_package_name}_testing_result.txt`` -- the final testing results 
+``tmp-diary/`` -- the output directory (including the GUI transitional model, seed tests, mutant tests, etc)
 
 ``tmp-diary/seed-tests/``  -- data of all randomly generated seed tests
 
-``tmp-diary/seed-tests/seed-test-1/`` -- data of the seed test and all mutants
+``tmp-diary/seed-tests/seed-test-1/`` -- data of the seed test and its corresponding mutants
 
-``tmp-diary/seed-tests/seed-test-1/mutant-1`` -- data of the mutant test
-
-``tmp-diary/seed-tests/seed-test-1/mutant-1/index_x.html`` -- the execution results with annotation info to highlight the semantic errors
-
-``tmp-diary/seed-tests/seed-test-1/mutant-1/checking_result.json`` -- the detailed results of oracle checking
-
-``tmp-diary/seed-tests/seed-test-1/mutant-1/gui_diff_analysis.txt`` -- the summary results of oracle checking
-
+``tmp-diary/seed-tests/seed-test-1/mutant-0-1`` -- data of the mutant test
 
 
 ## Step 4. Oracle checking, reduce false positives and merge similar reported errors
@@ -209,10 +200,11 @@ and merging checking results.
 
 ``--seeds``: the specific seed test id, e.g., "1;2;3" to do oracle checking and merging checking results
 
+
 Output Report, e.g.,
 
 ``
-./tmp-diary/merged_results.csv
+./tmp-diary/merged_results_xxx_s1,s2...csv
 ``
 
 The report includes:
@@ -222,6 +214,13 @@ The report includes:
  - ``crash errors`` and ``semantic errors``
 
 We can focus on ``Crash Errors`` and ``Semantic Errors``.
+
+Some important files:
+
+``tmp-diary/seed-tests/seed-test-1/mutant-0-1/index_x.html`` -- the visualized bug report with 
+annotation info to highlight the reported errors
+
+``tmp-diary/seed-tests/seed-test-1/mutant-0-1/checking_result.json`` -- the detailed results of oracle checking
 
 # Detailed Usage of Genie
 
