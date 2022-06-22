@@ -5,20 +5,20 @@
 Create a fresh Android 6.0 emulator (Genie should be able to work on other Android versions):
 
 ```
-avdmanager create avd --force --name testAVD_Android6.0 --package 'system-images;android-23;google_apis;x86' --abi google_apis/x86 --sdcard 512M --device 'Nexus 7'
+avdmanager create avd --force --name base --package 'system-images;android-23;google_apis;x86' --abi google_apis/x86 --sdcard 512M --device 'Nexus 7'
 ```
 
 Modify the fresh emulator for Genie (add files into sdcard and remove unnecessary default apps):
 
 ```
-emulator -avd testAVD_Android6.0 &
+emulator -avd base &
 python3 -m deploy.emulator init -s emulator-5554  # if you are not under "Genie", you should execute "cd Genie/"
 ```
 
 Start the emulator in the read-only mode (without leaving any side-effect for next start-up)
 
 ```
-emulator -avd testAVD_Android6.0 -read-only &
+emulator -avd base -read-only &
 ```
 
 ## Step 1. Mine GUI transitional model
@@ -152,7 +152,7 @@ Here,
 We currently support running mutant tests on a number of Android emulators in parallel
 
 ```
-python3 -m deploy.start --avd testAVD_Android6.0 --no-headless -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --timeout 900 --offset 2 [--script script_samples/diary_activity_ignore_view_diffs_script.json]
+python3 -m deploy.start --avd base --no-headless -n 8 --apk apps_for_test/de.rampro.activitydiary_118.apk -o ./tmp-diary/ --timeout 900 --offset 2 [--script script_samples/diary_activity_ignore_view_diffs_script.json]
 ```
 
 Here,
@@ -191,7 +191,7 @@ delete the corresponding log files and rerun.
 
 ### Some useful utilities in Step 3
 
-####(1) run one specific mutant and do oracle checking (internally called by multiple-threads fuzzing)
+(1) run one specific mutant and do oracle checking (internally called by multiple-threads fuzzing)
 
 ```
 python3 -m droidbot.start -d emulator-5554 -a apps_for_test/de.rampro.activitydiary_118.apk -policy fuzzing_run -grant_perm -is_emulator -keep_app -o ./tmp-diary/ -mutant ./tmp-diary/seed-tests/seed-test-1/mutant-1 -coverage [-config-script script_samples/diary_activity_ignore_view_diffs_script.json]
@@ -215,7 +215,7 @@ Here,
 
 3. We may not need to specify ``-interval``.
 
-####(2) run mutant generation and execution together in a single-thread
+(2) run mutant generation and execution together in a single-thread
 
 ```
 python3 -m droidbot.start -d emulator-5554 -a apps_for_test/de.rampro.activitydiary_118.apk -policy fuzzing -count 10000 -max_seed_test_suite_size 20 -max_random_seed_test_length 15 -max_independent_trace_length 8 -max_mutants_per_insertion_position 300 -grant_perm -is_emulator -interval 1 -o ./tmp-diary [-script user_script.json] [-config-script script_samples/diary_activity_ignore_view_diffs_script.json]
