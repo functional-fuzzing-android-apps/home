@@ -3,13 +3,13 @@
 We introduce *independent view fuzzing*, a novel, fully automated approach for detecting non-crashing 
 functional bugs in Android apps. 
 We have realized this approach as a research prototype tool, *Genie*. 
-To our knowledge, Genie is the *first* work to generate automated test oracles for Android apps
-and not limited to specific functional properties.
+To our knowledge, Genie is the *first* work to generate automated test oracles,
+which are not limited to specific functional properties, for Android apps.
 
 # Publication
 
 [1] ["Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs"](https://tingsu.github.io/files/oopsla21-Genie.pdf)
-Ting Su, Yichen Yan, Jue Wang, Jingling Sun, Yiheng Xiong, Geguang Pu, Ke Wang, Zhendong Su. In SPLASH/OOPSLA 2021. 
+Ting Su, Yichen Yan, Jue Wang, Jingling Sun, Yiheng Xiong, Geguang Pu, Ke Wang, Zhendong Su. In SPLASH/OOPSLA 2021. ([talk video](https://youtu.be/RoOJ5s1dh-w))
 
 ```
 @article{10.1145/3485533,
@@ -27,6 +27,20 @@ Ting Su, Yichen Yan, Jue Wang, Jingling Sun, Yiheng Xiong, Geguang Pu, Ke Wang, 
 }
 ```
 # Genie's workflow
+
+Genie operates in the four main steps (see the picture below): 
+1. mining a GUI transitional model from the app;
+2. generating a set of random seed tests and executing each seed test to infer
+independent views (In principle, the seed tests also could come from human or existing test generation tools);
+3. leveraging the independent views and the transitional model to guide the generation of mutant
+tests and executing them; and 
+4. comparing each seed test and its corresponding mutant tests
+to identify property violations.
+
+Finally, Genie adopts a bug report reducer to remove duplicated
+reported errors and trivial false positives, and ranks the remaining distinct bug reports according
+to their occurrences for manual confirmation. 
+
 ![Genie_workflow](Genie_workflow.png)
 
 # Running Environment and Setup
