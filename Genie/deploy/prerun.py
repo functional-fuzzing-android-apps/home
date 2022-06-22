@@ -6,7 +6,7 @@ from deploy.utils import list_devices
 if __name__ == '__main__':
     ap = ArgumentParser()
 
-    ap.add_argument('avd')
+    ap.add_argument('--avd', dest='avd', required=True)
     ap.add_argument('-o', dest='out', required=True)
     ap.add_argument('--apk', dest='apk', required=True)
     ap.add_argument('--model-construction', '--model', dest='model_construction',
@@ -42,11 +42,11 @@ if __name__ == '__main__':
         emulator = None
 
     # the default configuration for model construction and seed/mutant generation
-    model_size, seed_count, mutant_per_pos = (2000, 100, 200)
+    model_size, seed_count, mutant_per_pos = (2000, 20, 200)
     if args.small:
         model_size, seed_count, mutant_per_pos = (100, 2, 15)  # (100, 2, 15)
     elif args.big:
-        model_size, seed_count, mutant_per_pos = (3200, 100, 30)
+        model_size, seed_count, mutant_per_pos = (3200, 100, 300)
 
     grant_permission = "-grant_perm" if args.grant_permission else ""
 
