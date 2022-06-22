@@ -224,7 +224,7 @@ annotation info to highlight the reported errors
 
 # Detailed Usage of Genie
 
-If you want to know more how to use and debug Genie, you can find the detailed instructions [here](https://github.com/functional-fuzzing-android-apps/home/tree/master/Genie/DEVELOPER.md).
+If you want to know more how to use and debug Genie, you can find the detailed instructions [here](https://github.com/functional-fuzzing-android-apps/home/blob/master/DEVELOPER.md).
 
 
 # How to inspect Genie-generated bug report?
