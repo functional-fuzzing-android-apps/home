@@ -43,7 +43,7 @@ to their occurrences for manual confirmation.
 
 ![Genie_workflow](Genie_workflow.png)
 
-# Running Environment and Setup
+# Running Environment 
 
 Genie is built upon [Droidbot](https://github.com/honeynet/droidbot) and [Stoat](https://github.com/tingsu/Stoat). Basically, you can follow the setup instruction of [Droidbot](https://github.com/honeynet/droidbot) to setup Genie.
 
@@ -68,7 +68,7 @@ pip install -e .   # if failed, you can execute "sudo pip3 install -e ."
 
 # Quick Start
 
-## Step 1. Preparation
+## Step 1: Setup and Preparation
 
 Create a fresh Android 6.0 emulator (Genie should be able to work on other Android versions):
 
@@ -83,7 +83,7 @@ emulator -port 5554 -avd base &
 python3 -m deploy.emulator init -s emulator-5554  # if you are not under "Genie", you should execute "cd Genie/"
 ```
 
-## Step 2. mine GUI transitional model, generate seed tests and corresponding mutant tests
+## Step 2: Mine GUI transitional model, generate seed tests and corresponding mutant tests 
 
 We provide a script to automatically start an Android emulator, mine GUI transitional model, generate 
 seed tests and the corresponding mutants.
@@ -183,7 +183,7 @@ delete the corresponding log files and rerun.
 
 
 
-## Step 4. Postprocess the results (reduce false positives and merge similar reported errors)
+## Step 4. Oracle checking, reduce false positives and merge similar reported errors
 
 
 ```
