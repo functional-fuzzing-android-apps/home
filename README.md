@@ -6,6 +6,8 @@ We have realized this approach as a research prototype tool, *Genie*.
 To our knowledge, Genie is the *first* work to generate automated test oracles,
 which are not limited to specific functional properties, for Android apps.
 
+*You can find more about our work on testing/analyzing Android apps at this [website](https://tingsu.github.io/files/mobile-app-analysis.html)*.
+
 # Publication
 
 [1] ["Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs"](https://tingsu.github.io/files/oopsla21-Genie.pdf)
